@@ -1,0 +1,73 @@
+{% extends "PortfolioDatabase/base.html" %}
+{% block body %}
+<div class="d-flex align-items-center">
+    <h1 class="homeTitle">Home -</h1>
+    <h3 class="nameTitle"><strong>Will Gunther</strong></h3>
+</div>
+<div class="row">
+    <div class="col-md-5 offset-md-1">
+        <h2>Hobbies</h2>
+    {% for hobby in hobbies_list %}
+            <!-- Left Column -->
+            
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+                            <h3 class="mt-3 mb-0 txt-darkblue">{{hobby.hobby_name}}</h3>
+                            <!-- <p class="mb-2">Years of Experience: {{hobby.hobby_years}}</p> -->
+                            <!-- <h6>{{hobby.hobby_description}}</h6> -->
+                            <a class="btn btn-dkblue-success m-auto" href="{% url 'PortfolioDatabase:Details' hobby.id%}">Details</a>
+                        </div>
+                    </div>
+                    <img class="card-img-bottom" width="200px" src="{{hobby.hobby_image}}" alt="Image of {{hobby.hobby_name}}">                  
+                </div>
+           
+        {% endfor %}
+    </div>
+    <div class="col-md-5 ml-auto">
+        <h2>Portfolio</h2>
+        {% for portfolio in portfolio_list %}
+            <!-- Right Column -->
+            
+                <div class="card mb-4">
+                    <img class="card-img-top" width="200px" src="{{portfolio.portfolio_image}}" alt="Image of {{portfolio.portfolio_name}}">
+                    <div class="card-body">
+                        <div class="d-flex align-items-center">
+
+                            <h3 class="mt-3 mb-0 txt-darkblue">{{portfolio.portfolio_name}}</h3>
+                            <!-- <p class="mb-2">Date Created: {{portfolio.portfolio_created}}</p> -->
+                            <!-- <h6>{{portfolio.portfolio_description}}</h6> -->
+                            <a class="btn btn-dkblue-success m-auto" href="{% url 'PortfolioDatabase:PortfolioDetails' portfolio.id%}">Details</a>
+                        </div> 
+                    </div>
+                </div>
+            
+    {% endfor %}
+    </div>
+</div>
+
+{% endblock %}
+
+<!-- 
+
+<div class="d-flex align-items-center">
+    <h1 class="homeTitle">Home -</h1>
+    <h3 class="nameTitle"><strong>Will Gunther</strong></h3>
+</div>
+            {% for hobby in hobbies_list %}
+            <div class="row mb-4">
+                <div class="col-12 col-sm-8 col-md-6 col-lg-5 offset-md-1"> 
+                    <img class="card" width="350px" src="{{hobby.hobby_image}}" alt="Image of {{hobby.hobby_name}}">
+                </div>
+                <div class="col-12 col-sm-4 col-md-5 col-lg-4 bg-light p-3 border-dkblue">
+                    <h3 class="mt-3 mb-0 txt-darkblue">{{hobby.hobby_name}}</h3>
+                    <p class="mb-2">Years of Experience:{{hobby.hobby_date_published}}</p>
+                    <h6>{{hobby.hobby_description}}</h6>
+                </div>
+                <div class="col12  col-sm-6 col-md-1 col-lg-1 ml-auto justify-content-center align-items-center">
+                    <a class="btn btn-dkblue-success" href="{% url 'PortfolioDatabase:Details' hobby.id%}">Details</a>
+                </div>
+            </div>
+            {% endfor %}
+            
+ -->

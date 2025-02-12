@@ -1,0 +1,115 @@
+#body{
+    background-color: rgba(202, 202, 202, 0.404);
+}
+
+
+#navbar {
+    padding-left: 50px;
+    padding-right: 100px;
+  }
+
+.homeTitle{
+    margin-left: 20px;
+    margin-top: 20px;
+
+}
+.nameTitle{
+    margin-top: 30px;
+    margin-left: 10px;
+}
+
+#hTitle {
+    margin-top:10px;
+    margin-bottom: 0px;
+  }
+
+#pDate{
+    margin-top: 5px;
+}
+
+.article{
+    background-color:lightgray;
+    border: 1px dashed gray;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#detailsImg{
+    margin: 20px;
+    max-height:300px;
+    max-width: 600px;
+}
+
+
+
+.bg-darkblue{
+    background-color: #003366;
+}
+
+.txt-darkblue{
+    color: #003366;
+}
+
+.border-dkblue{
+    border: 1px solid #003366;
+    border-radius: 5px;
+}
+
+.btn-dkblue-success {
+    --bs-btn-color: #fff; /* Text color */
+    --bs-btn-bg: #003366; /* Background color (navy blue) */
+    --bs-btn-border-color: #003366; /* Border color */
+    
+    --bs-btn-hover-color: #fff; /* Text color on hover */
+    --bs-btn-hover-bg: #002244; /* Darker navy blue for hover */
+    --bs-btn-hover-border-color: #002244; /* Darker border on hover */
+    
+    --bs-btn-focus-shadow-rgb: 0, 51, 102; /* Shadow focus color */
+    
+    --bs-btn-active-color: #fff; /* Text color on active state */
+    --bs-btn-active-bg: #001f33; /* Even darker navy blue for active */
+    --bs-btn-active-border-color: #001f33; /* Darker border on active state */
+    --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); /* Active shadow effect */
+    
+    --bs-btn-disabled-color: #fff; /* Disabled text color */
+    --bs-btn-disabled-bg: #4b6d8c; /* Lighter navy blue for disabled */
+    --bs-btn-disabled-border-color: #4b6d8c; /* Lighter border for disabled state */
+}
+
+.detailsBtn{
+    margin: 20px;
+    width: 150px;
+}
+
+.m-auto{
+    margin:auto;
+}
+
+.border-right{
+    border-right: 1px solid #003366;
+    border-bottom: 1px solid #003366;
+    margin: 0px;
+    padding: 16px 16px;
+
+}
+
+.border-left{
+    border-left: 1px solid #003366;
+    border-bottom: 1px solid #003366;
+    margin: 0px;
+    padding: 16px 16px;
+}
+
+.border-left-small{
+    border-left: 1px solid #003366;
+    border-bottom: 1px solid #003366;
+    margin: 0px;
+    padding: 19px 16px;
+}
+
+.border-left-less{
+    border-left: 1px solid #003366;
+    border-bottom: 1px solid #003366;
+    margin: 0px;
+    padding: 16px 23px;
+}

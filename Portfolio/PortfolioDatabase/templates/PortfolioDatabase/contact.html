@@ -1,0 +1,66 @@
+{% extends "PortfolioDatabase/base.html" %} 
+{% block body %}
+<div class="d-flex align-items-center">
+    <h1 class="homeTitle">Contact -</h1>
+    <h3 class="nameTitle"><strong>Will Gunther</strong></h3>
+</div>
+<div class="row">
+    
+    <h1 class="mt-3 mb-0 txt-darkblue text-center">Contact Me</h1>
+    <div class="col-md-3 offset-md-1">
+        <div class="row bg-darkblue">
+            <h3 class="text-white text-center m-3">Type</h3>
+        </div>
+        <div class="row">
+            <p class="text-center fs-5 border-right "><strong>Name: </strong></p>
+        </div>
+        <div class="row">
+            <p class="text-center fs-5 border-right "><strong>Phone Number: </strong></p>
+        </div>
+        <div class="row">
+            <p class="text-center fs-5 border-right "><strong>Email: </strong></p>
+        </div>
+        <div class="row">
+            <p class="text-center fs-5 border-right "><strong>Address: </strong></p>
+        </div>
+        <div class="row">
+            <p class="text-center fs-5 border-right "><strong>LinkedIn: </strong></p>
+        </div>
+    </div>
+
+    <div class="col-md-3">
+        <div class="row bg-darkblue">
+            <h3 class="text-white text-center m-3">Information</h3>
+        </div>
+        <div class="row">
+            <p class="text-start fs-5 border-left-less">{{name}}</p>
+        </div>
+        <div class="row">
+            <p class="text-start fs-5 border-left-less"><a href="tel:{{ phone }}"><strong>{{phone}}</strong></a></p>
+        </div>
+        <div class="row">
+            <p class="text-start fs-5 border-left-less"><a href="mailto:willgunther9@gmail.com"><strong>{{email}}</strong></a></p>
+        </div>
+        <div class="row">
+            <p class="text-start fs-5 border-left"> <a href="https://www.google.com/maps/search/?api=1&query={{ address }}" target="_blank"><strong>{{address}}</strong></a></p>
+        </div>
+        <div class="row">
+            <p class="text-start fs-6 border-left-small"><a href="https://www.linkedin.com/in/will-gunther-1b0b4b1b6/" target="_blank"><strong>https://linkedin.com/in/will-gunther</strong></a></p>
+        </div>
+        <!-- <div class="row">
+            <p class="text-center fs-5 border-left">{{description}}</p>
+        </div> -->
+    </div> 
+
+    <div class="col-md-4 ml-1">
+        <div class="row bg-darkblue">
+            <h3 class="text-white text-center m-3">Description</h3>
+        </div>
+        <div class="row">
+            <p class="text-center fs-5 border-left">{{description}}</p>
+        </div>
+    </div> 
+</div>
+     
+
+{% endblock %}
